@@ -1,0 +1,11 @@
+/********************
+
+Theme Name: All Who Wander
+Author: Ricky Muldrew
+
+********************/
+
+@import "css/reset.css";
+@import "css/bootstrap.min.css";
+@import "css/my.css";
+@import "css/overrides.css";
