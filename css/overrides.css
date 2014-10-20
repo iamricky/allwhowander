@@ -1,0 +1,8 @@
+.jp-carousel-info{
+	display: none !important;
+}
+
+.jp-carousel-wrap.jp-carousel-light{
+	overflow-x: visible !important;
+	overflow-y: visible !important;
+}
