@@ -1,8 +1,12 @@
 <?php
 
-add_theme_support('post-thumbnails');
-add_theme_support('post-formats', array('aside','gallery'));
-set_post_thumbnail_size(308, 209, true);
+add_action( 'after_setup_theme', 'setup_my_themes' );
+function setup_my_themes () {
+  add_theme_support('post-thumbnails');
+  add_theme_support('post-formats', array('aside','gallery'));
+  set_post_thumbnail_size(308, 209, true);
+  register_nav_menu('primary', 'Primary Menu');
+}
 
 add_action('after_setup_theme', 'default_attachment_display_settings');
 function default_attachment_display_settings() {
@@ -25,7 +29,6 @@ function register_my_sidebars() {
     )
   );
 }
-register_nav_menu('primary', 'Primary Menu');
 
 add_action('wp_footer', 'js_footer_scripts');
 function js_footer_scripts(){
