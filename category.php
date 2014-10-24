@@ -25,7 +25,5 @@ $body_tags  = "col-sm-8 blog-pg";
         <?php endif; ?>
     </section>
 
-    <aside class="col-sm-4 sidebar" id="sidebar-primary">
-        <?php dynamic_sidebar( "blog" ); ?>
-    </aside>
+    <?php get_template_part( "content", "sidebar" ); ?>
 <?php get_footer(); ?>
