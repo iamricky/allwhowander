@@ -18,12 +18,12 @@ $body_tags  = "col-sm-8 blog-pg";
 
             <!-- category posts -->
             <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( "posts/partial", $category ); ?>
+                <?php get_template_part( "partials/post", $category ); ?>
             <?php endwhile; ?>
 
             <?php get_template_part( "pagination" ); ?>
         <?php endif; ?>
     </section>
 
-    <?php get_template_part( "content", "sidebar" ); ?>
+    <?php get_template_part( "partials/layout", "sidebar" ); ?>
 <?php get_footer(); ?>

@@ -17,7 +17,7 @@ $body_tags  = ( in_category( "Blog" ) ? "col-sm-8 blog-pg" : "portfolio-pg" );
     </section>
 
     <?php if ( in_category( "blog" ) ) : ?>
-        <?php get_template_part( "content", "sidebar" ); ?>
+        <?php get_template_part( "partials/layout", "sidebar" ); ?>
     <?php endif; ?>
 
 <?php get_footer(); ?>
