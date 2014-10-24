@@ -19,7 +19,7 @@ $body_class	= array( "row", "no-margin", $page_title . "-pg" );
 
 	<div id="post-<?php the_ID(); ?>" <?php post_class( $body_class ); ?>>
 		<?php if ( is_page( "service" ) ) : ?>
-		<?php get_template_part( "content", "breadcrumbs" ); endif; ?>
+		<?php get_template_part( "partials/layout", "breadcrumbs" ); endif; ?>
 		<?php while ( have_posts() ) : the_post(); the_content(); endwhile; ?>
 	</div>
 
