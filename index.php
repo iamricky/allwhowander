@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<?php get_template_part( "content", "jumbotron" ); ?>
+	<?php get_template_part( "partials/layout", "jumbotron" ); ?>
 
 	<div class="row">
 		<div class="col-sm-10">
