@@ -18,7 +18,7 @@ $body_tags  = "col-sm-8 blog-pg";
 
             <!-- category posts -->
             <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( "cat", $category ); ?>
+                <?php get_template_part( "posts/partial", $category ); ?>
             <?php endwhile; ?>
 
             <?php get_template_part( "pagination" ); ?>

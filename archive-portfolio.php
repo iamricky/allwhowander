@@ -19,7 +19,7 @@ $clearfix   = 0;
 
             <!-- category posts -->
             <?php while ( have_posts() ) : the_post(); $clearfix++ ?>
-                <?php get_template_part( "arc", $post_type ); ?>
+                <?php get_template_part( "posts/partial", $post_type ); ?>
 
                 <?php if ( $clearfix%3 === 0 ): ?>
                     <!-- portfolio clearfix -->
