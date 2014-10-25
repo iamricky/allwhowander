@@ -19,6 +19,20 @@ function scrollToAnchor() {
 
 $(document).ready(function() {
     scrollToAnchor();
+
+    $(".feature-init").click(function() {
+        $(".my-panel").fadeToggle();
+    });
+    $('.portfolio-pg [title], [alt]').each(function() {
+        var $this = $(this);
+        $this.data('title', $this.attr('title'));
+        $this.removeAttr('title');
+    });
+    $('.portfolio-pg [title], [alt]').each(function() {
+        var $this = $(this);
+        $this.data('title', $this.attr('title'));
+        $this.removeAttr('title');
+    });
 });
 
 (function($) {

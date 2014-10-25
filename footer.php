@@ -31,21 +31,12 @@
 		<?php wp_footer(); ?>
 		<script>
 		$(document).ready(function(){
-			$(".feature-init").click(function(){
-				$(".my-panel").fadeToggle();
-			});
-			$('.portfolio-pg [title], [alt]').each( function(){
-				var $this = $(this);
-					$this.data('title',$this.attr('title'));
-					$this.removeAttr('title');
-			});
-			$('.portfolio-pg [title], [alt]').each( function(){
-				var $this = $(this);
-					$this.data('title',$this.attr('title'));
-					$this.removeAttr('title');
-			});
-			<?php $cat_blog = 'Blog'; if((is_category($cat_blog) or in_category($cat_blog)) or is_search()) : ?>
-			$('.img-row').hover( function () { $('.pin-me',this).show(); }, function () { $('.pin-me',this).hide(); } );
+			<?php $category = 'Blog'; if( (is_category( $category ) or in_category( $category )) or is_search()) : ?>
+			$('.img-row').hover( function () {
+				$('.pin-me',this).show();
+			}, function () {
+				$('.pin-me',this).hide();
+			} );
 			$("img[class*=\"wp-image-\"]").addClass('img-responsive');
 			<?php endif; ?>
 		});
