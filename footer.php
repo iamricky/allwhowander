@@ -1,5 +1,5 @@
 
-			<?php get_template_part( "content", "social" ); ?>
+			<?php get_template_part( "partials/layout", "social" ); ?>
 		</div> <!-- container end -->
 		<footer>
 			<div class="custom-border"></div>
