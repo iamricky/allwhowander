@@ -331,8 +331,14 @@ ul, menu, dir {
 
 /* services */
 
-.services-pg { margin: 0 0 48px; }
-.services-pg-breadcrumb.fixed {
+.services-pg {
+	margin: 0 0 48px;
+}
+.services-pg-breadcrumbs {
+	font-family: 'Amatic SC', cursive;
+	margin: 0 0 36px;
+}
+.services-pg-breadcrumbs.fixed {
 	background: white;
 	left: 0; top: 0;
 	padding: 24px;
@@ -340,17 +346,17 @@ ul, menu, dir {
 	width: 100%;
 	z-index: 100;
 }
-.services-pg-breadcrumb div[class^="col-sm-"] {
+.services-pg-breadcrumbs div[class^="col-sm-"] {
 	text-align: center;
 	text-transform: uppercase;
 }
-.services-pg-breadcrumb div[class^="col-sm-"] a {
+.services-pg-breadcrumbs div[class^="col-sm-"] a {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
 }
-.services-pg-breadcrumb div[class^="col-sm-"] a:hover,
-.services-pg-breadcrumb div[class^="col-sm-"] a.active {
+.services-pg-breadcrumbs div[class^="col-sm-"] a:hover,
+.services-pg-breadcrumbs div[class^="col-sm-"] a.active {
 	font-weight: 700;
 }
 .services-pg > div[class="col-sm-3"] .service .price-listing {

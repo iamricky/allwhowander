@@ -1,16 +1,22 @@
-<div class="row services-pg-breadcrumb">
-    <div class="col-sm-3">
-        <h6>• <a title="one" rel="services-nav">planning &amp; full design</a>
-        </h6>
-    </div>
-    <div class="col-sm-3">
-        <h6>• <a title="two" rel="services-nav">planning &amp; partial design</a></h6>
-    </div>
-    <div class="col-sm-3">
-        <h6>• <a title="three" rel="services-nav">month-of planning</a></h6>
-    </div>
-    <div class="col-sm-3">
-        <h6>•<a title="four" rel="services-nav">looking for something else ?</a>
-        </h6>
-    </div>
+<?php
+
+$breadcrumbs = array(
+                "one"   => "planning &amp; full design",
+                "two"   => "planning &amp; partial design",
+                "three" => "month-of planning",
+                "four"  => "looking for something else"
+            );
+
+?>
+<div class="row services-pg-breadcrumbs">
+
+    <?php foreach ( $breadcrumbs as $k => $v ) : ?>
+        <div class="col-sm-3">
+            <h3>
+                <a title="<?php echo $k ?>" rel="services-nav">
+                    <?php echo $v ?>
+                </a>
+            </h3>
+        </div>
+    <?php endforeach; ?>
 </div>
