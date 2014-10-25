@@ -21,7 +21,7 @@ $body_tags  = "col-sm-8 blog-pg";
                 <?php get_template_part( "partials/post", $category ); ?>
             <?php endwhile; ?>
 
-            <?php get_template_part( "pagination" ); ?>
+            <?php get_template_part( "partials/layout", "pagination" ); ?>
         <?php endif; ?>
     </section>
 
