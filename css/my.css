@@ -151,7 +151,7 @@ ul, menu, dir {
 .logo.hidden-xs	{
 	margin: 0 auto;
 	position: relative;
-	top: -120px;
+	top: -150px;
 	z-index: 1000;
 }
 .logo.visible-xs {
