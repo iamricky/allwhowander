@@ -1,12 +1,12 @@
 <?php get_header();
 
-if ( get_post_type() === "portfolio" ) {
+if ( in_category( "blog" ) ) {
+    $category   = get_the_category();
+    $page_title = strtolower( $category[0]->cat_name );
+    $body_tags  = "col-sm-8 blog-pg";
+} else {
     $page_title = get_post_type();
     $body_tags  = "portfolio";
-} else {
-    $category   = get_the_category();
-    $page_title = $category[0]->cat_name;
-    $body_tags  = "col-sm-8 blog-pg";
 }
 
 ?>
