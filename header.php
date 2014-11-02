@@ -12,7 +12,6 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<?php get_template_part( "partials/loop", "featured"); ?>
 		<div class="body-padding-top hidden-xs"></div>
 
 		<div class="container line-height"> <!-- container start -->
