@@ -6,3 +6,9 @@
 	overflow-x: visible !important;
 	overflow-y: visible !important;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .jumbotron {
+        margin: 180px 0 0;
+    }
+}
