@@ -16,7 +16,9 @@
         margin: 180px 0 0;
     }
     .row.headline {
+<<<<<<< HEAD
         margin: 12px 0 1.500em;
+=======
         margin-left: 0;
         margin-right: 0;
     }
