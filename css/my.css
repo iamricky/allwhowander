@@ -148,18 +148,18 @@ ul, menu, dir {
 .my-nav ul li a:hover {
 	opacity: 0.75;
 }
-.logo.hidden-xs, .logo.visible-xs {
+.hidden-xs > .logo, .visible-xs > .logo {
 	background: url(../img/logo.png) 100% 0 no-repeat;
 	height: 170px;
 	width: 240px;
 }
-.logo.hidden-xs	{
+.hidden-xs > .logo {
 	margin: 0 auto;
 	position: relative;
 	top: -150px;
 	z-index: 1000;
 }
-.logo.visible-xs {
+.visible-xs > .logo {
 	margin: 0px auto;
 	margin-top: 24px;
 	margin-bottom: 24px;
