@@ -9,8 +9,8 @@
 
 @media only screen and (max-device-width: 480px) {
 <<<<<<< HEAD
-    .container {
-        padding: 0 24px;
+    body > .container {
+        margin: 0 24px;
     }
     .jumbotron {
         margin: 180px 0 0;
