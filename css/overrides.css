@@ -8,7 +8,11 @@
 }
 
 @media only screen and (max-device-width: 480px) {
+<<<<<<< HEAD
     html, body {
+=======
+    .container {
+>>>>>>> b8db5be81cb1606e25fc75930579a971f0a5d97b
         padding: 0 24px;
     }
     .jumbotron {
