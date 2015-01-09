@@ -15,4 +15,9 @@
     .jumbotron {
         margin: 180px 0 0;
     }
+    .row.headline {
+        margin: 24px 0 1.500em;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
