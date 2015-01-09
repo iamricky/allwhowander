@@ -16,7 +16,9 @@
 
 		<div class="container line-height"> <!-- container start -->
 			<div class="row my-nav">
-				<div class="logo visible-xs"><a href="www.allwhowanderevents.com"></a></div>
+				<?php if ( is_home() ): ?>
+					<div class="logo visible-xs"><a href="www.allwhowanderevents.com"></a></div>
+				<?php endif; ?>
 				<?php wp_nav_menu( array( "container" => false, "menu_class" => "hidden-xs hidden-sm" ) ); ?>
 				<div class="logo hidden-xs"><a href="www.allwhowanderevents.com"></a></div>
 			</div>
